@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  box-shadow: 2px 2px 4px rgb(215, 215, 215);
+  background-color: rgb(253, 254, 255);
+  padding: 10px 50px;
+}
+
+nav a {
+  color: black;
+}
+
+.links {
+  display: flex;
+  gap: 80px;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+.firstinput {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.bg {
+  background-color: rgb(220, 220, 220);
+  /* height: 90vh;
+  width: 100%; */
+}
+
+.text {
+  padding: 7.5rem 5rem 4rem;
+}
+
+.text h1 {
+  font-size: 60px;
+}
+
+.text p {
+  /* font-size: 15px; */
+  color: #777;
+  margin-top: 20px;
+  margin-left: 9px;
+}
+.secondinput {
+  margin-top: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+section {
+  margin-top: 4rem;
+}
+
+.how {
+  text-align: center;
+}
+
+.how h1 {
+  font-size: 40px;
+}
+
+.how p {
+  /* color: #777; */
+  width: 45%;
+  margin: 1rem auto;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+  /* column-gap: 7rem; */
+  padding: 50px 7rem;
+}
+
+.mincard {
+  width: 20%;
+}
+.mincard h1 {
+  margin: 1rem 0;
+}
+
+.mincard .num-p {
+  padding: 20px;
+  color: rgb(34, 34, 34);
+}
+
+.num-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2px;
+  height: 2px;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: rgb(220, 220, 220);
+  border-radius: 50%;
+}
+
+#becomeAnAffiliate {
+  background-color: rgb(220, 220, 220);
+}
+
+.hsec {
+  text-align: center;
+  font-size: 25px;
+  padding: 2.8rem 0 4rem;
+}
+
+.asec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 3rem;
+}
+
+.asec-col {
+  width: 50%;
+  margin: auto;
+}
+
+.asec-col h1 {
+  padding: 1rem 0;
+}
+
+.asec-col i {
+  font-size: 30px;
+}
+
+.asec p {
+  color: #777;
+}
+
+.hr {
+  background-color: rgb(195, 195, 195) !important;
+  width: 90%;
+  height: 1px;
+  margin: 5rem auto 0;
+}
+
+.perks {
+  margin-bottom: 5rem;
+}
+
+.perks h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 40px;
+}
+
+.perk-col {
+  display: flex;
+  justify-content: center;
+  column-gap: 15rem;
+}
+.per div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.per p {
+  margin-left: 20px;
+  color: #777;
+  font-size: 18px;
+}
+
+#commisions {
+  background-color: rgb(220, 220, 220);
+  padding-bottom: 50px;
+  text-align: center;
+}
+.com-h {
+  font-size: 25px;
+  padding-top: 4rem;
+}
+.com {
+  display: flex;
+  justify-content: center;
+  column-gap: 10rem;
+  margin-top: 3rem;
+}
+.com h1 {
+  font-size: 35px;
+}
+.com p {
+  color: #777;
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+#faq {
+  text-align: center;
+  /* margin: 5rem 0; */
+}
+.faqPart {
+  margin: 3rem 0.7rem;
+}
+
+.faqPart h1 {
+  font-size: 30px;
+}
+
+.accordion {
+  margin-top: 20px;
+}
+button {
+  padding: 30px;
+  width: 60%;
+  border: 2px solid rgb(120, 117, 117);
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: rgb(220, 220, 220);
+  text-align: left;
+}
+.accordion-body {
+  display: none;
+}
+.accordion-item {
+  margin-bottom: 20px;
+}
+.accordion-body p {
+  border: 2px solid rgb(220, 220, 220);
+  width: 60%;
+  margin: 0 auto;
+  color: #777;
+  line-height: 2rem;
+  border-top: none;
+  box-shadow: 2px 2px 4px rgb(215, 215, 215);
+}
+
+.accordion-item.showFaq .accordion-body {
+  display: block;
+}
+button i {
+  font-size: 25px;
+}
+
+.meet h1 {
+  text-align: center;
+  margin: 3.5rem 3.5rem;
+}
+
+.main-meet {
+  border: 2px solid rgb(220, 220, 220);
+  width: 50%;
+  margin: 0 auto;
+  padding: 70px;
+}
+.meet-main-col {
+  display: flex;
+  padding: 10px 20px;
+  margin: 20px 0 0;
+}
+.main-meet p {
+  color: #777;
+}
+.meet2-div {
+  padding-top: 20px;
+}
+.div-img img {
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.secondbg {
+  background-color: rgb(220, 220, 220);
+  height: 47vh;
+  width: 21%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.thirdbg {
+  background-color: rgb(220, 220, 220);
+  height: 47vh;
+  width: 21%;
+  float: right;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.all-meet {
+  display: flex;
+  height: 20rem;
+}
+
+.join-affiliate {
+  margin-top: 10rem;
+  text-align: center;
+  background-color: rgb(220, 220, 220);
+  height: 50vh;
+  width: 100%;
+  font-size: 18px;
+}
+.join-affiliate h1 {
+  padding: 3rem 3rem;
+}
+.join-affiliate p {
+  color: #777;
+  text-align: center;
+  padding: 0 15rem;
+}
+.lastin {
+  padding: 15px 60px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 30px 0;
+  border-radius: 2px;
+  font-size: 20px;
+}
+.footer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 10px;
+}
+.imen {
+  font-size: 30px;
+}
+.imen2 h1 {
+  margin-left: 29rem;
+}
+/* .footer i {
+  float: left;
+  margin-right: 10px;
+} */
+/* .footer h1 {
+  text-align: center;
+  font-family: cursive;
+  margin: 1.5rem 0;
+} */
+@media screen and (max-width: 900) {
+}
